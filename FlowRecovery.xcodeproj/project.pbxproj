@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001001 /* FlowRecoveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000001000 /* FlowRecoveryApp.swift */; };
+		A1000003001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000003000 /* Assets.xcassets */; };
+		A1000004001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A1000004000 /* PrivacyInfo.xcprivacy */; };
+		A1100001001 /* RRModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100001000 /* RRModels.swift */; };
+		A1100002001 /* ArtifactDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100002000 /* ArtifactDetection.swift */; };
+		A1100003001 /* FrequencyDomainAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100003000 /* FrequencyDomainAnalysis.swift */; };
+		A1100004001 /* TimeDomainAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100004000 /* TimeDomainAnalysis.swift */; };
+		A1100005001 /* NonlinearAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100005000 /* NonlinearAnalysis.swift */; };
+		A1100006001 /* WindowSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100006000 /* WindowSelection.swift */; };
+		A1100007001 /* HRVSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100007000 /* HRVSession.swift */; };
+		A1100008001 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100008000 /* Archive.swift */; };
+		A1100009001 /* Reconciliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100009000 /* Reconciliation.swift */; };
+		A1100010001 /* RRCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100010000 /* RRCollector.swift */; };
+		A1100011001 /* PolarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100011000 /* PolarManager.swift */; };
+		A1100012001 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100012000 /* Verification.swift */; };
+		A1100013001 /* DFAAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100013000 /* DFAAnalysis.swift */; };
+		A1100014001 /* StressAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100014000 /* StressAnalysis.swift */; };
+		A1100015001 /* RespirationAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100015000 /* RespirationAnalysis.swift */; };
+		A1100017001 /* PDFReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100017000 /* PDFReportGenerator.swift */; };
+		A1100019001 /* TrendAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100019000 /* TrendAnalysis.swift */; };
+		A1100020001 /* LiveWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100020000 /* LiveWaveformView.swift */; };
+		A1100021001 /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100021000 /* TrendView.swift */; };
+		A1100022001 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100022000 /* UserSettings.swift */; };
+		A1100023001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100023000 /* MainTabView.swift */; };
+		A1100024001 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100024000 /* DashboardView.swift */; };
+		A1100025001 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100025000 /* RecordView.swift */; };
+		A1100026001 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100026000 /* HistoryView.swift */; };
+		A1100027001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100027000 /* SettingsView.swift */; };
+		A1100028001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100028000 /* Theme.swift */; };
+		A1100029001 /* MorningResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100029000 /* MorningResultsView.swift */; };
+		A1100030001 /* BaselineTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100030000 /* BaselineTracker.swift */; };
+		A1100031001 /* RRDataImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100031000 /* RRDataImporter.swift */; };
+		A1100032001 /* ImportDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100032000 /* ImportDataView.swift */; };
+		A1100033001 /* BreathingMandalaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100033000 /* BreathingMandalaView.swift */; };
+		A1100034001 /* RawRRBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100034000 /* RawRRBackup.swift */; };
+		A1100035001 /* OvernightChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100035000 /* OvernightChartsView.swift */; };
+		A1100036001 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100036000 /* HealthKitManager.swift */; };
+		A1100037001 /* AnalysisSummaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100037000 /* AnalysisSummaryGenerator.swift */; };
+		A1100038001 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100038000 /* ShareSheet.swift */; };
+		A1100039001 /* PDFPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100039000 /* PDFPreviewView.swift */; };
+		A1100040001 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100040000 /* DebugLog.swift */; };
+		A1100041001 /* PeakCapacityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100041000 /* PeakCapacityCard.swift */; };
+		A1100042001 /* BackgroundAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100042000 /* BackgroundAudioManager.swift */; };
+		A1100043001 /* BackgroundLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100043000 /* BackgroundLocationManager.swift */; };
+		A1100044001 /* RecoveryDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100044000 /* RecoveryDashboardView.swift */; };
+		A1100045001 /* RecoveryScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100045000 /* RecoveryScoreCalculator.swift */; };
+		A1100046001 /* HRVDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100046000 /* HRVDetailView.swift */; };
+		A1100047001 /* SleepDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100047000 /* SleepDetailView.swift */; };
+		A1100048001 /* TrainingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100048000 /* TrainingDetailView.swift */; };
+		A1100049001 /* VitalsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100049000 /* VitalsDetailView.swift */; };
+		A1100050001 /* StatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100050000 /* StatBox.swift */; };
+		A1100099001 /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1100099000 /* TrashView.swift */; };
+		A3000001001 /* FrequencyDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3000001000 /* FrequencyDomainTests.swift */; };
+		A3000002001 /* TimeDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3000002000 /* TimeDomainTests.swift */; };
+		A3000003001 /* ArtifactDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3000003000 /* ArtifactDetectionTests.swift */; };
+		A3000004001 /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3000004000 /* IntegrationTests.swift */; };
+		EF0E678D2F1C4D3D00FA65A5 /* QuickDebugTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E678B2F1C4D3D00FA65A5 /* QuickDebugTest.swift */; };
+		EF0E678E2F1C4D3D00FA65A5 /* NonlinearAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E678A2F1C4D3D00FA65A5 /* NonlinearAnalysisTests.swift */; };
+		EF0E678F2F1C4D3D00FA65A5 /* ArtifactCorrectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E67892F1C4D3D00FA65A5 /* ArtifactCorrectionTests.swift */; };
+		EF0E67902F1C4D3D00FA65A5 /* ArchiveIntegrityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E67882F1C4D3D00FA65A5 /* ArchiveIntegrityTests.swift */; };
+		EF0E67912F1C4D3D00FA65A5 /* WindowSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E678C2F1C4D3D00FA65A5 /* WindowSelectionTests.swift */; };
+		EF3A13342F2837A3009037DA /* LostSessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A13332F2837A3009037DA /* LostSessionsView.swift */; };
+		EF3A13362F285D6A009037DA /* TextFilePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A13352F285D6A009037DA /* TextFilePreviewView.swift */; };
+		EF3A13382F285DBA009037DA /* CrashLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A13372F285DBA009037DA /* CrashLogManager.swift */; };
+		EF989B892F27AD02001E453C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF989B872F27AD02001E453C /* Extensions.swift */; };
+		EF989B8A2F27AD02001E453C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF989B842F27AD02001E453C /* Constants.swift */; };
+		EF989B8C2F27AD02001E453C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF989B862F27AD02001E453C /* Errors.swift */; };
+		EF989B8E2F27AD18001E453C /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF989B8D2F27AD18001E453C /* EncryptionManager.swift */; };
+		EFA4D1992F1DCCD300086543 /* WindowSelectionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4D1982F1DCCD300086543 /* WindowSelectionMethod.swift */; };
+		EFDD029D2F11685500038D55 /* PolarBleSdk in Frameworks */ = {isa = PBXBuildFile; productRef = EFDD029C2F11685500038D55 /* PolarBleSdk */; };
+		UC001001001 /* HRVThresholds.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001001000 /* HRVThresholds.swift */; };
+		UC001002001 /* DiagnosticScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001002000 /* DiagnosticScorer.swift */; };
+		UC001003001 /* WindowClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001003000 /* WindowClassifier.swift */; };
+		UC001004001 /* DataSourceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001004000 /* DataSourceSelector.swift */; };
+		UC001005001 /* CauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001005000 /* CauseDetector.swift */; };
+		UC001006001 /* PositiveCauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001006000 /* PositiveCauseDetector.swift */; };
+		UC001007001 /* SevereCauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001007000 /* SevereCauseDetector.swift */; };
+		UC001008001 /* TagBasedCauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001008000 /* TagBasedCauseDetector.swift */; };
+		UC001009001 /* SleepCauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001009000 /* SleepCauseDetector.swift */; };
+		UC001010001 /* MetricBasedCauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001010000 /* MetricBasedCauseDetector.swift */; };
+		UC001011001 /* PatternCauseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = UC001011000 /* PatternCauseDetector.swift */; };
+		UCT001001 /* HRVThresholdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT001000 /* HRVThresholdsTests.swift */; };
+		UCT002001 /* DiagnosticScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT002000 /* DiagnosticScorerTests.swift */; };
+		UCT003001 /* WindowClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT003000 /* WindowClassifierTests.swift */; };
+		UCT004001 /* DataSourceSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT004000 /* DataSourceSelectorTests.swift */; };
+		UCT005001 /* CauseDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT005000 /* CauseDetectorTests.swift */; };
+		UCT006001 /* StressAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT006000 /* StressAnalysisTests.swift */; };
+		UCT007001 /* DFAAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT007000 /* DFAAnalysisTests.swift */; };
+		UCT008001 /* TrendAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT008000 /* TrendAnalysisTests.swift */; };
+		UCT009001 /* BaselineTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UCT009000 /* BaselineTrackerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4000001000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0000001000;
+			remoteInfo = FlowRecovery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0000001001 /* FlowRecovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowRecovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0000003001 /* FlowRecoveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowRecoveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000001000 /* FlowRecoveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRecoveryApp.swift; sourceTree = "<group>"; };
+		A1000003000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000004000 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A1100001000 /* RRModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRModels.swift; sourceTree = "<group>"; };
+		A1100002000 /* ArtifactDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetection.swift; sourceTree = "<group>"; };
+		A1100003000 /* FrequencyDomainAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDomainAnalysis.swift; sourceTree = "<group>"; };
+		A1100004000 /* TimeDomainAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDomainAnalysis.swift; sourceTree = "<group>"; };
+		A1100005000 /* NonlinearAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonlinearAnalysis.swift; sourceTree = "<group>"; };
+		A1100006000 /* WindowSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSelection.swift; sourceTree = "<group>"; };
+		A1100007000 /* HRVSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVSession.swift; sourceTree = "<group>"; };
+		A1100008000 /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		A1100009000 /* Reconciliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reconciliation.swift; sourceTree = "<group>"; };
+		A1100010000 /* RRCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRCollector.swift; sourceTree = "<group>"; };
+		A1100011000 /* PolarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarManager.swift; sourceTree = "<group>"; };
+		A1100012000 /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		A1100013000 /* DFAAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFAAnalysis.swift; sourceTree = "<group>"; };
+		A1100014000 /* StressAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressAnalysis.swift; sourceTree = "<group>"; };
+		A1100015000 /* RespirationAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespirationAnalysis.swift; sourceTree = "<group>"; };
+		A1100017000 /* PDFReportGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReportGenerator.swift; sourceTree = "<group>"; };
+		A1100019000 /* TrendAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendAnalysis.swift; sourceTree = "<group>"; };
+		A1100020000 /* LiveWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWaveformView.swift; sourceTree = "<group>"; };
+		A1100021000 /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
+		A1100022000 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		A1100023000 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A1100024000 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A1100025000 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		A1100026000 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A1100027000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1100028000 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A1100029000 /* MorningResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningResultsView.swift; sourceTree = "<group>"; };
+		A1100030000 /* BaselineTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineTracker.swift; sourceTree = "<group>"; };
+		A1100031000 /* RRDataImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRDataImporter.swift; sourceTree = "<group>"; };
+		A1100032000 /* ImportDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportDataView.swift; sourceTree = "<group>"; };
+		A1100033000 /* BreathingMandalaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingMandalaView.swift; sourceTree = "<group>"; };
+		A1100034000 /* RawRRBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawRRBackup.swift; sourceTree = "<group>"; };
+		A1100035000 /* OvernightChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvernightChartsView.swift; sourceTree = "<group>"; };
+		A1100036000 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		A1100037000 /* AnalysisSummaryGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisSummaryGenerator.swift; sourceTree = "<group>"; };
+		A1100038000 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		A1100039000 /* PDFPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewView.swift; sourceTree = "<group>"; };
+		A1100040000 /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		A1100041000 /* PeakCapacityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakCapacityCard.swift; sourceTree = "<group>"; };
+		A1100042000 /* BackgroundAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAudioManager.swift; sourceTree = "<group>"; };
+		A1100043000 /* BackgroundLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLocationManager.swift; sourceTree = "<group>"; };
+		A1100044000 /* RecoveryDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryDashboardView.swift; sourceTree = "<group>"; };
+		A1100045000 /* RecoveryScoreCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryScoreCalculator.swift; sourceTree = "<group>"; };
+		A1100046000 /* HRVDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVDetailView.swift; sourceTree = "<group>"; };
+		A1100047000 /* SleepDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDetailView.swift; sourceTree = "<group>"; };
+		A1100048000 /* TrainingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDetailView.swift; sourceTree = "<group>"; };
+		A1100049000 /* VitalsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsDetailView.swift; sourceTree = "<group>"; };
+		A1100050000 /* StatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBox.swift; sourceTree = "<group>"; };
+		A1100099000 /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
+		A3000001000 /* FrequencyDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDomainTests.swift; sourceTree = "<group>"; };
+		A3000002000 /* TimeDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDomainTests.swift; sourceTree = "<group>"; };
+		A3000003000 /* ArtifactDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetectionTests.swift; sourceTree = "<group>"; };
+		A3000004000 /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
+		EF0E67882F1C4D3D00FA65A5 /* ArchiveIntegrityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveIntegrityTests.swift; sourceTree = "<group>"; };
+		EF0E67892F1C4D3D00FA65A5 /* ArtifactCorrectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactCorrectionTests.swift; sourceTree = "<group>"; };
+		EF0E678A2F1C4D3D00FA65A5 /* NonlinearAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonlinearAnalysisTests.swift; sourceTree = "<group>"; };
+		EF0E678B2F1C4D3D00FA65A5 /* QuickDebugTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDebugTest.swift; sourceTree = "<group>"; };
+		EF0E678C2F1C4D3D00FA65A5 /* WindowSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSelectionTests.swift; sourceTree = "<group>"; };
+		EF3A13332F2837A3009037DA /* LostSessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostSessionsView.swift; sourceTree = "<group>"; };
+		EF3A13352F285D6A009037DA /* TextFilePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFilePreviewView.swift; sourceTree = "<group>"; };
+		EF3A13372F285DBA009037DA /* CrashLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashLogManager.swift; sourceTree = "<group>"; };
+		EF989B842F27AD02001E453C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF989B862F27AD02001E453C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		EF989B872F27AD02001E453C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EF989B8D2F27AD18001E453C /* EncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
+		EFA4D1982F1DCCD300086543 /* WindowSelectionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSelectionMethod.swift; sourceTree = "<group>"; };
+		EFDD029A2F115C6200038D55 /* FlowRecovery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowRecovery.entitlements; sourceTree = "<group>"; };
+		EFDD029C2F115C6200038D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		UC001001000 /* HRVThresholds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVThresholds.swift; sourceTree = "<group>"; };
+		UC001002000 /* DiagnosticScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticScorer.swift; sourceTree = "<group>"; };
+		UC001003000 /* WindowClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowClassifier.swift; sourceTree = "<group>"; };
+		UC001004000 /* DataSourceSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceSelector.swift; sourceTree = "<group>"; };
+		UC001005000 /* CauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseDetector.swift; sourceTree = "<group>"; };
+		UC001006000 /* PositiveCauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCauseDetector.swift; sourceTree = "<group>"; };
+		UC001007000 /* SevereCauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevereCauseDetector.swift; sourceTree = "<group>"; };
+		UC001008000 /* TagBasedCauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagBasedCauseDetector.swift; sourceTree = "<group>"; };
+		UC001009000 /* SleepCauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCauseDetector.swift; sourceTree = "<group>"; };
+		UC001010000 /* MetricBasedCauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricBasedCauseDetector.swift; sourceTree = "<group>"; };
+		UC001011000 /* PatternCauseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternCauseDetector.swift; sourceTree = "<group>"; };
+		UCT001000 /* HRVThresholdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVThresholdsTests.swift; sourceTree = "<group>"; };
+		UCT002000 /* DiagnosticScorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticScorerTests.swift; sourceTree = "<group>"; };
+		UCT003000 /* WindowClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowClassifierTests.swift; sourceTree = "<group>"; };
+		UCT004000 /* DataSourceSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceSelectorTests.swift; sourceTree = "<group>"; };
+		UCT005000 /* CauseDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseDetectorTests.swift; sourceTree = "<group>"; };
+		UCT006000 /* StressAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressAnalysisTests.swift; sourceTree = "<group>"; };
+		UCT007000 /* DFAAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFAAnalysisTests.swift; sourceTree = "<group>"; };
+		UCT008000 /* TrendAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendAnalysisTests.swift; sourceTree = "<group>"; };
+		UCT009000 /* BaselineTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineTrackerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0000001002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD029D2F11685500038D55 /* PolarBleSdk in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000003002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0000000001 = {
+			isa = PBXGroup;
+			children = (
+				A0000000002 /* FlowRecovery */,
+				A0000000004 /* FlowRecoveryTests */,
+				A0000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0000000002 /* FlowRecovery */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD029C2F115C6200038D57 /* Info.plist */,
+				EFDD029A2F115C6200038D55 /* FlowRecovery.entitlements */,
+				A1000004000 /* PrivacyInfo.xcprivacy */,
+				A1000001000 /* FlowRecoveryApp.swift */,
+				A1000003000 /* Assets.xcassets */,
+				A0000000006 /* Sources */,
+			);
+			path = FlowRecovery;
+			sourceTree = "<group>";
+		};
+		A0000000004 /* FlowRecoveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0E67882F1C4D3D00FA65A5 /* ArchiveIntegrityTests.swift */,
+				EF0E67892F1C4D3D00FA65A5 /* ArtifactCorrectionTests.swift */,
+				EF0E678A2F1C4D3D00FA65A5 /* NonlinearAnalysisTests.swift */,
+				EF0E678B2F1C4D3D00FA65A5 /* QuickDebugTest.swift */,
+				EF0E678C2F1C4D3D00FA65A5 /* WindowSelectionTests.swift */,
+				A3000001000 /* FrequencyDomainTests.swift */,
+				A3000002000 /* TimeDomainTests.swift */,
+				A3000003000 /* ArtifactDetectionTests.swift */,
+				A3000004000 /* IntegrationTests.swift */,
+				UCT001000 /* HRVThresholdsTests.swift */,
+				UCT002000 /* DiagnosticScorerTests.swift */,
+				UCT003000 /* WindowClassifierTests.swift */,
+				UCT004000 /* DataSourceSelectorTests.swift */,
+				UCT005000 /* CauseDetectorTests.swift */,
+				UCT006000 /* StressAnalysisTests.swift */,
+				UCT007000 /* DFAAnalysisTests.swift */,
+				UCT008000 /* TrendAnalysisTests.swift */,
+				UCT009000 /* BaselineTrackerTests.swift */,
+			);
+			path = FlowRecoveryTests;
+			sourceTree = "<group>";
+		};
+		A0000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0000001001 /* FlowRecovery.app */,
+				A0000003001 /* FlowRecoveryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0000000006 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EF989B882F27AD02001E453C /* Utilities */,
+				A0000000007 /* Models */,
+				A0000000008 /* Analysis */,
+				A0000000009 /* Collection */,
+				A0000000010 /* Storage */,
+				A0000000011 /* Export */,
+				A0000000013 /* Import */,
+				A0000000012 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A0000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4D1982F1DCCD300086543 /* WindowSelectionMethod.swift */,
+				A1100001000 /* RRModels.swift */,
+				A1100007000 /* HRVSession.swift */,
+				A1100022000 /* UserSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0000000008 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				UC000000015 /* CauseDetection */,
+				A1100002000 /* ArtifactDetection.swift */,
+				A1100003000 /* FrequencyDomainAnalysis.swift */,
+				A1100004000 /* TimeDomainAnalysis.swift */,
+				A1100005000 /* NonlinearAnalysis.swift */,
+				A1100006000 /* WindowSelection.swift */,
+				A1100012000 /* Verification.swift */,
+				A1100013000 /* DFAAnalysis.swift */,
+				A1100014000 /* StressAnalysis.swift */,
+				A1100015000 /* RespirationAnalysis.swift */,
+				A1100019000 /* TrendAnalysis.swift */,
+				A1100030000 /* BaselineTracker.swift */,
+				A1100037000 /* AnalysisSummaryGenerator.swift */,
+				A1100045000 /* RecoveryScoreCalculator.swift */,
+				UC001001000 /* HRVThresholds.swift */,
+				UC001002000 /* DiagnosticScorer.swift */,
+				UC001003000 /* WindowClassifier.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		A0000000009 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				A1100010000 /* RRCollector.swift */,
+				A1100011000 /* PolarManager.swift */,
+				A1100036000 /* HealthKitManager.swift */,
+				A1100042000 /* BackgroundAudioManager.swift */,
+				A1100043000 /* BackgroundLocationManager.swift */,
+				UC001004000 /* DataSourceSelector.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		A0000000010 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				EF989B8D2F27AD18001E453C /* EncryptionManager.swift */,
+				A1100008000 /* Archive.swift */,
+				A1100009000 /* Reconciliation.swift */,
+				A1100034000 /* RawRRBackup.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A0000000011 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				A1100017000 /* PDFReportGenerator.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		A0000000012 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF3A13332F2837A3009037DA /* LostSessionsView.swift */,
+				A0000000014 /* Utilities */,
+				A1100020000 /* LiveWaveformView.swift */,
+				A1100021000 /* TrendView.swift */,
+				A1100023000 /* MainTabView.swift */,
+				A1100024000 /* DashboardView.swift */,
+				A1100044000 /* RecoveryDashboardView.swift */,
+				A1100046000 /* HRVDetailView.swift */,
+				A1100047000 /* SleepDetailView.swift */,
+				A1100048000 /* TrainingDetailView.swift */,
+				A1100049000 /* VitalsDetailView.swift */,
+				A1100025000 /* RecordView.swift */,
+				A1100026000 /* HistoryView.swift */,
+				A1100027000 /* SettingsView.swift */,
+				A1100099000 /* TrashView.swift */,
+				A1100028000 /* Theme.swift */,
+				A1100029000 /* MorningResultsView.swift */,
+				A1100032000 /* ImportDataView.swift */,
+				A1100033000 /* BreathingMandalaView.swift */,
+				A1100035000 /* OvernightChartsView.swift */,
+				A1100041000 /* PeakCapacityCard.swift */,
+				A1100050000 /* StatBox.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0000000013 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				A1100031000 /* RRDataImporter.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		A0000000014 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF3A13352F285D6A009037DA /* TextFilePreviewView.swift */,
+				A1100038000 /* ShareSheet.swift */,
+				A1100039000 /* PDFPreviewView.swift */,
+				A1100040000 /* DebugLog.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EF989B882F27AD02001E453C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF3A13372F285DBA009037DA /* CrashLogManager.swift */,
+				EF989B842F27AD02001E453C /* Constants.swift */,
+				EF989B862F27AD02001E453C /* Errors.swift */,
+				EF989B872F27AD02001E453C /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		UC000000015 /* CauseDetection */ = {
+			isa = PBXGroup;
+			children = (
+				UC001005000 /* CauseDetector.swift */,
+				UC001006000 /* PositiveCauseDetector.swift */,
+				UC001007000 /* SevereCauseDetector.swift */,
+				UC001008000 /* TagBasedCauseDetector.swift */,
+				UC001009000 /* SleepCauseDetector.swift */,
+				UC001010000 /* MetricBasedCauseDetector.swift */,
+				UC001011000 /* PatternCauseDetector.swift */,
+			);
+			path = CauseDetection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0000001000 /* FlowRecovery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000001003 /* Build configuration list for PBXNativeTarget "FlowRecovery" */;
+			buildPhases = (
+				A0000001004 /* Sources */,
+				A0000001002 /* Frameworks */,
+				A0000001005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowRecovery;
+			productName = FlowRecovery;
+			productReference = A0000001001 /* FlowRecovery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0000003000 /* FlowRecoveryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000003003 /* Build configuration list for PBXNativeTarget "FlowRecoveryTests" */;
+			buildPhases = (
+				A0000003004 /* Sources */,
+				A0000003002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4000001001 /* PBXTargetDependency */,
+			);
+			name = FlowRecoveryTests;
+			productName = FlowRecoveryTests;
+			productReference = A0000003001 /* FlowRecoveryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A0000001000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A0000003000 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A0000001000;
+					};
+				};
+			};
+			buildConfigurationList = A0000000100 /* Build configuration list for PBXProject "FlowRecovery" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0000000001;
+			packageReferences = (
+				EFDD029B2F11685500038D55 /* XCRemoteSwiftPackageReference "polar-ble-sdk" */,
+			);
+			productRefGroup = A0000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0000001000 /* FlowRecovery */,
+				A0000003000 /* FlowRecoveryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0000001005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000003001 /* Assets.xcassets in Resources */,
+				A1000004001 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0000001004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001001 /* FlowRecoveryApp.swift in Sources */,
+				A1100001001 /* RRModels.swift in Sources */,
+				A1100002001 /* ArtifactDetection.swift in Sources */,
+				A1100003001 /* FrequencyDomainAnalysis.swift in Sources */,
+				A1100004001 /* TimeDomainAnalysis.swift in Sources */,
+				A1100005001 /* NonlinearAnalysis.swift in Sources */,
+				A1100006001 /* WindowSelection.swift in Sources */,
+				EF3A13382F285DBA009037DA /* CrashLogManager.swift in Sources */,
+				EF3A13342F2837A3009037DA /* LostSessionsView.swift in Sources */,
+				A1100012001 /* Verification.swift in Sources */,
+				A1100013001 /* DFAAnalysis.swift in Sources */,
+				A1100014001 /* StressAnalysis.swift in Sources */,
+				A1100015001 /* RespirationAnalysis.swift in Sources */,
+				A1100017001 /* PDFReportGenerator.swift in Sources */,
+				A1100019001 /* TrendAnalysis.swift in Sources */,
+				A1100030001 /* BaselineTracker.swift in Sources */,
+				A1100020001 /* LiveWaveformView.swift in Sources */,
+				A1100021001 /* TrendView.swift in Sources */,
+				A1100007001 /* HRVSession.swift in Sources */,
+				A1100008001 /* Archive.swift in Sources */,
+				A1100009001 /* Reconciliation.swift in Sources */,
+				A1100034001 /* RawRRBackup.swift in Sources */,
+				A1100010001 /* RRCollector.swift in Sources */,
+				A1100011001 /* PolarManager.swift in Sources */,
+				EF989B892F27AD02001E453C /* Extensions.swift in Sources */,
+				EF989B8A2F27AD02001E453C /* Constants.swift in Sources */,
+				EF989B8C2F27AD02001E453C /* Errors.swift in Sources */,
+				A1100036001 /* HealthKitManager.swift in Sources */,
+				A1100022001 /* UserSettings.swift in Sources */,
+				A1100023001 /* MainTabView.swift in Sources */,
+				A1100024001 /* DashboardView.swift in Sources */,
+				A1100044001 /* RecoveryDashboardView.swift in Sources */,
+				A1100046001 /* HRVDetailView.swift in Sources */,
+				A1100047001 /* SleepDetailView.swift in Sources */,
+				A1100048001 /* TrainingDetailView.swift in Sources */,
+				A1100049001 /* VitalsDetailView.swift in Sources */,
+				A1100050001 /* StatBox.swift in Sources */,
+				A1100025001 /* RecordView.swift in Sources */,
+				A1100026001 /* HistoryView.swift in Sources */,
+				EFA4D1992F1DCCD300086543 /* WindowSelectionMethod.swift in Sources */,
+				A1100027001 /* SettingsView.swift in Sources */,
+				A1100099001 /* TrashView.swift in Sources */,
+				A1100028001 /* Theme.swift in Sources */,
+				A1100029001 /* MorningResultsView.swift in Sources */,
+				A1100031001 /* RRDataImporter.swift in Sources */,
+				A1100032001 /* ImportDataView.swift in Sources */,
+				EF989B8E2F27AD18001E453C /* EncryptionManager.swift in Sources */,
+				A1100033001 /* BreathingMandalaView.swift in Sources */,
+				A1100035001 /* OvernightChartsView.swift in Sources */,
+				A1100037001 /* AnalysisSummaryGenerator.swift in Sources */,
+				A1100045001 /* RecoveryScoreCalculator.swift in Sources */,
+				EF3A13362F285D6A009037DA /* TextFilePreviewView.swift in Sources */,
+				A1100038001 /* ShareSheet.swift in Sources */,
+				A1100039001 /* PDFPreviewView.swift in Sources */,
+				A1100040001 /* DebugLog.swift in Sources */,
+				A1100041001 /* PeakCapacityCard.swift in Sources */,
+				A1100042001 /* BackgroundAudioManager.swift in Sources */,
+				A1100043001 /* BackgroundLocationManager.swift in Sources */,
+				UC001001001 /* HRVThresholds.swift in Sources */,
+				UC001002001 /* DiagnosticScorer.swift in Sources */,
+				UC001003001 /* WindowClassifier.swift in Sources */,
+				UC001004001 /* DataSourceSelector.swift in Sources */,
+				UC001005001 /* CauseDetector.swift in Sources */,
+				UC001006001 /* PositiveCauseDetector.swift in Sources */,
+				UC001007001 /* SevereCauseDetector.swift in Sources */,
+				UC001008001 /* TagBasedCauseDetector.swift in Sources */,
+				UC001009001 /* SleepCauseDetector.swift in Sources */,
+				UC001010001 /* MetricBasedCauseDetector.swift in Sources */,
+				UC001011001 /* PatternCauseDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000003004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3000001001 /* FrequencyDomainTests.swift in Sources */,
+				EF0E678D2F1C4D3D00FA65A5 /* QuickDebugTest.swift in Sources */,
+				EF0E678E2F1C4D3D00FA65A5 /* NonlinearAnalysisTests.swift in Sources */,
+				EF0E678F2F1C4D3D00FA65A5 /* ArtifactCorrectionTests.swift in Sources */,
+				EF0E67902F1C4D3D00FA65A5 /* ArchiveIntegrityTests.swift in Sources */,
+				EF0E67912F1C4D3D00FA65A5 /* WindowSelectionTests.swift in Sources */,
+				A3000002001 /* TimeDomainTests.swift in Sources */,
+				A3000003001 /* ArtifactDetectionTests.swift in Sources */,
+				A3000004001 /* IntegrationTests.swift in Sources */,
+				UCT001001 /* HRVThresholdsTests.swift in Sources */,
+				UCT002001 /* DiagnosticScorerTests.swift in Sources */,
+				UCT003001 /* WindowClassifierTests.swift in Sources */,
+				UCT004001 /* DataSourceSelectorTests.swift in Sources */,
+				UCT005001 /* CauseDetectorTests.swift in Sources */,
+				UCT006001 /* StressAnalysisTests.swift in Sources */,
+				UCT007001 /* DFAAnalysisTests.swift in Sources */,
+				UCT008001 /* TrendAnalysisTests.swift in Sources */,
+				UCT009001 /* BaselineTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4000001001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0000001000 /* FlowRecovery */;
+			targetProxy = A4000001000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0000000101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0000000102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A0000001006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowRecovery/FlowRecovery.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC9Q9A366N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlowRecovery/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app connects to your Polar H10 heart rate monitor to collect RR intervals for HRV analysis.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your heart rate data to calculate HRV metrics.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app saves HRV analysis results to HealthKit.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrissharp.flowrecovery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0000001007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowRecovery/FlowRecovery.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC9Q9A366N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlowRecovery/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app connects to your Polar H10 heart rate monitor to collect RR intervals for HRV analysis.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your heart rate data to calculate HRV metrics.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app saves HRV analysis results to HealthKit.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrissharp.flowrecovery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0000003006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrissharp.flowrecovery.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowRecovery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlowRecovery";
+			};
+			name = Debug;
+		};
+		A0000003007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrissharp.flowrecovery.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowRecovery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlowRecovery";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0000000100 /* Build configuration list for PBXProject "FlowRecovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000101 /* Debug */,
+				A0000000102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000001003 /* Build configuration list for PBXNativeTarget "FlowRecovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000001006 /* Debug */,
+				A0000001007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000003003 /* Build configuration list for PBXNativeTarget "FlowRecoveryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000003006 /* Debug */,
+				A0000003007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFDD029B2F11685500038D55 /* XCRemoteSwiftPackageReference "polar-ble-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/polarofficial/polar-ble-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFDD029C2F11685500038D55 /* PolarBleSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDD029B2F11685500038D55 /* XCRemoteSwiftPackageReference "polar-ble-sdk" */;
+			productName = PolarBleSdk;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A0000000000 /* Project object */;
+}

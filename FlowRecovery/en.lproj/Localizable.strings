@@ -1,0 +1,94 @@
+/*
+  Localizable.strings
+  FlowRecovery
+
+  Copyright © 2024-2026 Chris Sharp. All rights reserved.
+*/
+
+// MARK: - Tab Bar
+"tab.dashboard" = "Dashboard";
+"tab.record" = "Record";
+"tab.history" = "History";
+"tab.trends" = "Trends";
+"tab.settings" = "Settings";
+
+// MARK: - Record View
+"record.title" = "Record";
+"record.done" = "Done";
+"record.error" = "Error";
+"record.morningAnalysisReady" = "Morning Analysis Ready";
+"record.readiness" = "Readiness";
+"record.polarH10" = "Polar H10";
+"record.scanning" = "Scanning for Polar H10...";
+"record.putOnStrap" = "Put on your Polar H10 strap and moisten the electrodes";
+"record.keepAppOpen" = "Keep the app open - silent audio keeps it running in background.";
+"record.tapForMorning" = "Tap 'Get Morning Reading' when you wake up.";
+"record.dataFetchFailed" = "Data Fetch Failed";
+"record.dataNotRetrieved" = "The recording data was not retrieved successfully. Please try again.";
+
+// MARK: - Settings View
+"settings.title" = "Settings";
+"settings.profile" = "Profile";
+"settings.sleep" = "Sleep";
+"settings.units" = "Units";
+"settings.baselines" = "Baselines";
+"settings.fitnessIntegration" = "Fitness Integration";
+"settings.recording" = "Recording";
+"settings.hrvAnalysis" = "HRV Analysis";
+"settings.customTags" = "Custom Tags";
+"settings.about" = "About";
+"settings.data" = "Data";
+"settings.debug" = "Debug";
+
+"settings.birthday" = "Birthday";
+"settings.age" = "Age";
+"settings.years" = "years";
+"settings.fitnessLevel" = "Fitness Level";
+"settings.biologicalSex" = "Biological Sex";
+"settings.notSet" = "Not Set";
+"settings.typicalSleep" = "Typical Sleep";
+"settings.temperature" = "Temperature";
+"settings.version" = "Version";
+"settings.sourceCode" = "Source Code";
+
+// MARK: - Duration Options
+"duration.1minute" = "1 minute";
+"duration.2minutes" = "2 minutes";
+"duration.3minutes" = "3 minutes";
+"duration.5minutes" = "5 minutes";
+
+// MARK: - Common Actions
+"action.done" = "Done";
+"action.cancel" = "Cancel";
+"action.delete" = "Delete";
+"action.save" = "Save";
+"action.share" = "Share";
+"action.export" = "Export";
+"action.clear" = "Clear";
+
+// MARK: - Error Messages
+"error.unknown" = "Unknown error";
+"error.tryAgain" = "Please try again";
+
+// MARK: - Results View
+"results.keyMetrics" = "Key Metrics";
+"results.readiness" = "Readiness";
+"results.trainingLoad" = "Training Load";
+"results.analysisSummary" = "Analysis Summary";
+"results.peakCapacity" = "Peak Capacity";
+"results.overnightCharts" = "Overnight Charts";
+"results.heartRate" = "Heart Rate";
+"results.technicalDetails" = "Technical Details";
+"results.trends" = "Trends";
+"results.tags" = "Tags";
+"results.notes" = "Notes";
+
+// MARK: - Recovery Status
+"recovery.wellRecovered" = "Well Recovered";
+"recovery.adequateRecovery" = "Adequate Recovery";
+"recovery.incompleteRecovery" = "Incomplete Recovery";
+"recovery.significantStress" = "Significant Stress Load";
+"recovery.excellent" = "Excellent";
+"recovery.good" = "Good";
+"recovery.fair" = "Fair";
+"recovery.low" = "Low";
