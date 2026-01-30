@@ -176,6 +176,7 @@
 		EF3A13332F2837A3009037DA /* LostSessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostSessionsView.swift; sourceTree = "<group>"; };
 		EF3A13352F285D6A009037DA /* TextFilePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFilePreviewView.swift; sourceTree = "<group>"; };
 		EF3A13372F285DBA009037DA /* CrashLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashLogManager.swift; sourceTree = "<group>"; };
+		EF4B92BD2F2CE023007C9C16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EF989B842F27AD02001E453C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF989B862F27AD02001E453C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EF989B872F27AD02001E453C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 				A0000000002 /* FlowRecovery */,
 				A0000000004 /* FlowRecoveryTests */,
 				A0000000005 /* Products */,
+				EF4B92BD2F2CE023007C9C16 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
