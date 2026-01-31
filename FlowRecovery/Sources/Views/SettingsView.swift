@@ -23,8 +23,7 @@ struct SettingsView: View {
     @State private var showingRecoveryAlert = false
     @State private var recoveryMessage = ""
     @State private var isRecovering = false
-    @State private var showingLogExport = false
-    @State private var exportedLogURL: URL?
+    @State private var exportedLogItem: ExportableURL?
     @State private var showingRepairAlert = false
     @State private var repairMessage = ""
     @State private var deletedSessionCount: Int = 0
@@ -408,10 +407,8 @@ struct SettingsView: View {
             }
             #endif
         }
-        .sheet(isPresented: $showingLogExport) {
-            if let logURL = exportedLogURL {
-                ShareSheet(activityItems: [logURL])
-            }
+        .sheet(item: $exportedLogItem) { item in
+            ShareSheet(activityItems: [item.url])
         }
         .alert("RR Data Recovery", isPresented: $showingRecoveryAlert) {
             Button("OK") {}
@@ -513,11 +510,7 @@ struct SettingsView: View {
 
     private func exportDebugLogs() {
         guard let url = DebugLogger.shared.exportToFile() else { return }
-        exportedLogURL = url
-        // Use Task to delay showing sheet until next run loop to ensure URL is set
-        Task { @MainActor in
-            showingLogExport = true
-        }
+        exportedLogItem = ExportableURL(url: url)
     }
 
     private func repairArchive() {
@@ -1447,6 +1440,14 @@ struct ArchiveDiagnosticsView: View {
 }
 
 // ShareSheet is defined in Sources/Views/Utilities/ShareSheet.swift
+
+// MARK: - Exportable URL Wrapper
+
+/// Identifiable wrapper for URL to use with .sheet(item:)
+private struct ExportableURL: Identifiable {
+    let id = UUID()
+    let url: URL
+}
 
 #Preview {
     NavigationStack {
